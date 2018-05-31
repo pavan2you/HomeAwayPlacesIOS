@@ -1,0 +1,83 @@
+/bin/bash /Volumes/MyData/Development/AndroidStudio/HomeAwayPlaces/toiOS/convert_homeawayplaces.sh
+Code conversion started…
+
+translating com/homeaway/homeawayplaces/droid/R.java
+Translated 1 file: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/views/IMapView.java
+translating com/homeaway/homeawayplaces/views/IPlaceDetailView.java
+translating com/homeaway/homeawayplaces/views/IPlaceListItemView.java
+translating com/homeaway/homeawayplaces/views/IPlaceListView.java
+Translated 4 files: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/presenters/MapPresenter.java
+translating com/homeaway/homeawayplaces/presenters/PlaceDetailPresenter.java
+translating com/homeaway/homeawayplaces/presenters/PlaceListPresenter.java
+Translated 3 files: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/binders/PlaceListItemDataBinder.java
+Translated 1 file: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/locale/Colors.java
+translating com/homeaway/homeawayplaces/locale/Strings.java
+Translated 2 files: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/sync/dtos/StaticMapDTO.java
+translating com/homeaway/homeawayplaces/sync/dtos/StaticMapMarkerDTO.java
+translating com/homeaway/homeawayplaces/sync/dtos/StaticMapRequestDTO.java
+Translated 3 files: 0 errors, 0 warnings
+
+Ignored translating com/homeaway/homeawayplaces/sync/gateways
+
+translating com/homeaway/homeawayplaces/domain/MarkerModel.java
+translating com/homeaway/homeawayplaces/domain/Place.java
+translating com/homeaway/homeawayplaces/domain/PlaceModifiedEvent.java
+translating com/homeaway/homeawayplaces/domain/PlaceSearchResultEvent.java
+translating com/homeaway/homeawayplaces/domain/PlacesApi.java
+translating com/homeaway/homeawayplaces/domain/PlacesContext.java
+translating com/homeaway/homeawayplaces/domain/PlacesProvider.java
+Translated 7 files: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/domain/sync/PlacesDAOFactory.java
+Translated 1 file: 0 errors, 0 warnings
+
+Ignored translating com/homeaway/homeawayplaces/domain/sync/daos
+
+translating com/homeaway/homeawayplaces/domain/sync/dtos/AssociationDTO.java
+translating com/homeaway/homeawayplaces/domain/sync/dtos/EntityJsonDTO.java
+Translated 2 files: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/foursquare/FSPlaceProvider.java
+Translated 1 file: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/foursquare/sync/FSContext.java
+translating com/homeaway/homeawayplaces/foursquare/sync/FSPlacesDAOFactory.java
+Translated 2 files: 0 errors, 0 warnings
+
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSCategoryDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSGroupDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSHearNowDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSIconDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSItemDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSLocationDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSMetaDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSPriceDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSRequestDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSResponseDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSResultDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSStatsDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSTipDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSVenueDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSVenueHoursDTO.java
+translating com/homeaway/homeawayplaces/foursquare/sync/dtos/FSVenueListDTO.java
+Translated 16 files: 0 errors, 0 warnings
+
+Ignored translating com/homeaway/homeawayplaces/foursquare/sync/daos
+
+Ignored translating com/homeaway/homeawayplaces/foursquare/sync/gateways
+
+Copying converted files to /Volumes/MyData/Development/xCodeWS/HomeAwayPlaces/HomeAwayPlaces/Source/CodeConversion
+Done!
+use -fno-objc-arc for no ARC :)
+
+Process finished with exit code 0
