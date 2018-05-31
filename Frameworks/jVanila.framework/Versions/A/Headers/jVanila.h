@@ -1,0 +1,246 @@
+//
+//  jVanila.h
+//  jVanila
+//
+//  Created by Pavan on 14/11/15.
+//  Copyright (c) 2015 jVanila. All rights reserved.
+//
+
+//Code Conversion Headers
+//Code Conversion - core - moudle headers
+#import <jVanila/BuildInfo.h>
+#import <jVanila/IComparable.h>
+#import <jVanila/IComparator.h>
+#import <jVanila/AbstractComparator.h>
+#import <jVanila/IGenericList.h>
+#import <jVanila/IGenericMap.h>
+#import <jVanila/IMapEntity.h>
+#import <jVanila/IPredicate.h>
+#import <jVanila/ListBehaviorType.h>
+#import <jVanila/MapBehaviorType.h>
+#import <jVanila/CalendarConstants.h>
+#import <jVanila/ICalendar.h>
+#import <jVanila/IDateTime.h>
+#import <jVanila/IJsonArray.h>
+#import <jVanila/IJsonObject.h>
+#import <jVanila/IStringBuilder.h>
+#import <jVanila/IEvent.h>
+#import <jVanila/IEventBus.h>
+#import <jVanila/IEventSubscriber.h>
+#import <jVanila/VanilaException.h>
+#import <jVanila/IDateTimeUtils.h>
+#import <jVanila/INumberUtils.h>
+#import <jVanila/DataObject.h>
+#import <jVanila/IFileAccessor.h>
+#import <jVanila/IPlatformFactory.h>
+#import <jVanila/IStringUtils.h>
+#import <jVanila/ILocale.h>
+#import <jVanila/IResourceProvider.h>
+#import <jVanila/ITimeZone.h>
+#import <jVanila/Resource.h>
+#import <jVanila/IWeakReference.h>
+#import <jVanila/CloneableObject.h>
+#import <jVanila/ComparableObject.h>
+#import <jVanila/ICloneableObject.h>
+#import <jVanila/IComparableObject.h>
+#import <jVanila/IVanilaObject.h>
+#import <jVanila/VanilaObject.h>
+#import <jVanila/PlatformFactoryLocator.h>
+#import <jVanila/PlatformInfo.h>
+#import <jVanila/ISpannableStringBuilder.h>
+#import <jVanila/ITypeface.h>
+#import <jVanila/ILogger.h>
+#import <jVanila/IUUIDGenerator.h>
+#import <jVanila/AbsoluteOrRelativeDateFormatter.h>
+#import <jVanila/BitUtil.h>
+#import <jVanila/PrimitiveBox.h>
+#import <jVanila/ISynchronizedList.h>
+//Code Conversion - mobile - moudle headers
+#import <jVanila/IApplication.h>
+#import <jVanila/IAppHealthMonitor.h>
+#import <jVanila/IPermissionChecker.h>
+#import <jVanila/INativePushRegistryCallback.h>
+#import <jVanila/IMobilePlatformFactory.h>
+#import <jVanila/VanilaNotification.h>
+#import <jVanila/VanilaNotificationAction.h>
+#import <jVanila/BinderUtil.h>
+/*Job Api starts*/
+#import <jVanila/IAsyncJob.h>
+#import <jVanila/AsyncJob.h>
+#import <jVanila/IJobHandler.h>
+#import <jVanila/JobManager.h>
+#import <jVanila/AsyncToken.h>
+#import <jVanila/JobState.h>
+#import <jVanila/IPrioritable.h>
+#import <jVanila/BgAsyncJob.h>
+#import <jVanila/IOAsyncJob.h>
+#import <jVanila/FgAsyncJob.h>
+#import <jVanila/PeriodicAsyncJob.h>
+#import <jVanila/IAsyncTokenResultCallback.h>
+
+/*Job Api ends*/
+/*Location Api starts*/
+#import <jVanila/CircleParams.h>
+#import <jVanila/ICircle.h>
+#import <jVanila/ICircleOptions.h>
+#import <jVanila/ILatLngBounds.h>
+#import <jVanila/ILocationApi.h>
+#import <jVanila/IMarker.h>
+#import <jVanila/IMarkerOptions.h>
+#import <jVanila/IPolygon.h>
+#import <jVanila/IPolyline.h>
+#import <jVanila/IPolylineOptions.h>
+#import <jVanila/IVanilaMap.h>
+#import <jVanila/IVanilaMapCallbacks.h>
+#import <jVanila/MarkerParams.h>
+#import <jVanila/PolylineParams.h>
+#import <jVanila/VanilaLocation.h>
+#import <jVanila/IButtCap.h>
+#import <jVanila/ICap.h>
+#import <jVanila/ICircle.h>
+#import <jVanila/ICustomCap.h>
+#import <jVanila/IDash.h>
+#import <jVanila/IDot.h>
+#import <jVanila/IGap.h>
+#import <jVanila/IPatternItem.h>
+#import <jVanila/IPolygonOptions.h>
+#import <jVanila/IRoundCap.h>
+#import <jVanila/ISquareCap.h>
+#import <jVanila/JointType.h>
+#import <jVanila/PolygonParams.h>
+
+/*Location Api ends*/
+/*ImageLoader Api starts*/
+#import <jVanila/IImageFetcher.h>
+#import <jVanila/ImageFetcherConfig.h>
+#import <jVanila/ImageApi.h>
+/*ImageLoader Api ends*/
+#import <jVanila/MobileBuildInfo.h>
+#import <jVanila/MobilePlatformFactoryLocator.h>
+#import <jVanila/MobilePlatformInfo.h>
+#import <jVanila/DataBinder.h>
+#import <jVanila/IBindableView.h>
+#import <jVanila/IFragmentView.h>
+#import <jVanila/IView.h>
+#import <jVanila/NullBinder.h>
+#import <jVanila/NullController.h>
+#import <jVanila/Presenter.h>
+#import <jVanila/ApplicationController.h>
+#import <jVanila/IDependenciesCallback.h>
+//#import <jVanila/ResourceState.h>
+#import <jVanila/DAOFactory.h>
+#import <jVanila/IDAOFactory.h>
+#import <jVanila/ISyncStatsDAO.h>
+#import <jVanila/ISecureSqliteAccessor.h>
+#import <jVanila/ISqliteAccessor.h>
+#import <jVanila/ISqliteOpenListener.h>
+#import <jVanila/ITransactionHandler.h>
+#import <jVanila/ISqliteCursor.h>
+#import <jVanila/KeyValueStore.h>
+#import <jVanila/SqliteLoadedEvent.h>
+#import <jVanila/SqliteObjectLostEvent.h>
+#import <jVanila/NetRequestFailedForMaxTimesEvent.h>
+#import <jVanila/NetRequestSyncProgressEvent.h>
+#import <jVanila/NetResponseProcessingCompletedEvent.h>
+#import <jVanila/BackgroundProcessingCompletedEvent.h>
+#import <jVanila/NetworkAvailabilityEvent.h>
+#import <jVanila/QItemCountChangeEvent.h>
+#import <jVanila/SyncAdapterReadyToUseEvent.h>
+#import <jVanila/HttpHeaderBuilder.h>
+#import <jVanila/INetRequestQueue.h>
+#import <jVanila/IPeriodicPollingPool.h>
+#import <jVanila/IPollingRequestHost.h>
+#import <jVanila/ISyncAdapter.h>
+#import <jVanila/ISyncAdapterLoadCallback.h>
+#import <jVanila/SyncGateway.h>
+#import <jVanila/IPubSubTransceiver.h>
+#import <jVanila/IAsyncNetResponseListener.h>
+#import <jVanila/IMqttInQueue.h>
+
+//Code Conversion - imagecapture - moudle headers
+#import <jVanila/CroppableImagePickerDelegateController.h>
+#import <jVanila/ICroppableImagePickerCallback.h>
+#import <jVanila/ICroppableImagePickerDelegate.h>
+#import <jVanila/ImageCaptureRequest.h>
+
+//Code Generation Headers
+#import <jVanila/LookUpDAO.h>
+#import <jVanila/NetRequestDAO.h>
+#import <jVanila/NetRequestDAOHelper.h>
+#import <jVanila/SyncStatsDAO.h>
+#import <jVanila/GcmRegistrySyncOutDTO.h>
+#import <jVanila/FailureResponseDTO.h>
+#import <jVanila/FileDownloadDTO.h>
+#import <jVanila/HttpHeaderDTO.h>
+#import <jVanila/KeyValueLookUpDTO.h>
+#import <jVanila/NetRequestDTO.h>
+#import <jVanila/NetResponseDTO.h>
+#import <jVanila/NetRequestStatsDTO.h>
+#import <jVanila/SyncEntityDTO.h>
+#import <jVanila/SyncEntitiesDTO.h>
+#import <jVanila/SyncStatsDTO.h>
+#import <jVanila/GcmRegistrySyncGateway.h>
+#import <jVanila/JsonFileSyncGateway.h>
+#import <jVanila/MqttTopicDTO.h>
+#import <jVanila/MqttMessageDTO.h>
+#import <jVanila/MqttRequestDTO.h>
+#import <jVanila/MqttResponseDTO.h>
+#import <jVanila/MqttRemoteClientConnectedDTO.h>
+#import <jVanila/MqttRemoteClientDisconnectedDTO.h>
+#import <jVanila/JsonFileDTO.h>
+#import <jVanila/FileDTO.h>
+#import <jVanila/RemoveNetRequestByQueryDTO.h>
+
+//Wrapper headers
+#import <jVanila/GenericList.h>
+#import <jVanila/GenericMap.h>
+#import <jVanila/MapEntry.h>
+#import <jVanila/SynchronizedList.h>
+#import <jVanila/EventBus.h>
+#import <jVanila/Polygon.h>
+#import <jVanila/LatLngBounds.h>
+#import <jVanila/MarkerOptionsWrapper.h>
+#import <jVanila/PolylineOptionsWrapper.h>
+#import <jVanila/CircleOptionsWrapper.h>
+#import <jVanila/MarkerWrapper.h>
+#import <jVanila/PolylineWrapper.h>
+#import <jVanila/CircleWrapper.h>
+#import <jVanila/Logger.h>
+#import <jVanila/MobilePlatformFactory.h>
+#import <jVanila/FileSystemAccessor.h>
+#import <jVanila/SecureSqliteAccessor.h>
+#import <jVanila/SecureSqliteDataAccessObject.h>
+#import <jVanila/SqliteAccessor.h>
+#import <jVanila/SqliteDataAccessObject.h>
+#import <jVanila/HttpGateway.h>
+#import <jVanila/JSONUtils.h>
+#import <jVanila/NetRequestQueue.h>
+#import <jVanila/NetworkHandler.h>
+#import <jVanila/PeriodicPollingHandler.h>
+#import <jVanila/PollingHandler.h>
+#import <jVanila/SyncAdapter.h>
+#import <jVanila/SyncGatewayLookup.h>
+#import <jVanila/DataEncryptionDecryption.h>
+#import <jVanila/KeychainWrapper.h>
+#import <jVanila/NSData+AES.h>
+#import <jVanila/Sha1Hash.h>
+#import <jVanila/DeviceUtils.h>
+#import <jVanila/VanilaCustomUtility.h>
+//#import <jVanila/NetworkReachability.h>
+#import <jVanila/VanilaAppDelegate.h>
+#import <jVanila/VanilaUIView.h>
+#import <jVanila/VanilaUIViewController.h>
+#import <jVanila/CalendarWrapper.h>
+#import <jVanila/DateTimeUtils.h>
+#import <jVanila/DateTimeWrapper.h>
+#import <jVanila/JsonArrayWrapper.h>
+#import <jVanila/JsonObjectWrapper.h>
+#import <jVanila/NumberUtils.h>
+#import <jVanila/ResourceProvider.h>
+#import <jVanila/SpannableStringBuilderWrapper.h>
+#import <jVanila/StringBuilderWrapper.h>
+#import <jVanila/StringUtils.h>
+#import <jVanila/TimeZoneWrapper.h>
+#import <jVanila/UUIDGenerator.h>
+#import <jVanila/WeakReferenceWrapper.h>
+

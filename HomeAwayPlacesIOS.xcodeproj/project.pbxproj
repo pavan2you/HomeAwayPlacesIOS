@@ -1,0 +1,1121 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1814721520C01274005743BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814721420C01274005743BC /* AppDelegate.swift */; };
+		1814721720C01274005743BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814721620C01274005743BC /* ViewController.swift */; };
+		1814721A20C01274005743BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1814721820C01274005743BC /* Main.storyboard */; };
+		1814721C20C01275005743BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1814721B20C01275005743BC /* Assets.xcassets */; };
+		1814721F20C01276005743BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1814721D20C01276005743BC /* LaunchScreen.storyboard */; };
+		181472AD20C012B8005743BC /* PlaceListItemDataBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814722D20C012B8005743BC /* PlaceListItemDataBinder.m */; };
+		181472AE20C012B8005743BC /* MarkerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814723020C012B8005743BC /* MarkerModel.m */; };
+		181472AF20C012B8005743BC /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814723220C012B8005743BC /* Place.m */; };
+		181472B020C012B8005743BC /* PlaceModifiedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814723420C012B8005743BC /* PlaceModifiedEvent.m */; };
+		181472B120C012B8005743BC /* PlacesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814723620C012B8005743BC /* PlacesApi.m */; };
+		181472B220C012B8005743BC /* PlacesContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814723820C012B8005743BC /* PlacesContext.m */; };
+		181472B320C012B8005743BC /* PlaceSearchResultEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814723A20C012B8005743BC /* PlaceSearchResultEvent.m */; };
+		181472B420C012B8005743BC /* PlacesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814723C20C012B8005743BC /* PlacesProvider.m */; };
+		181472B520C012B8005743BC /* AssociationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814724020C012B8005743BC /* AssociationDTO.m */; };
+		181472B620C012B8005743BC /* EntityJsonDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814724220C012B8005743BC /* EntityJsonDTO.m */; };
+		181472B720C012B8005743BC /* PlacesDAOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814724420C012B8005743BC /* PlacesDAOFactory.m */; };
+		181472B820C012B8005743BC /* FSPlaceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814724920C012B8005743BC /* FSPlaceProvider.m */; };
+		181472B920C012B8005743BC /* FSCategoryDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814724D20C012B8005743BC /* FSCategoryDTO.m */; };
+		181472BA20C012B8005743BC /* FSGroupDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814724F20C012B8005743BC /* FSGroupDTO.m */; };
+		181472BB20C012B8005743BC /* FSHearNowDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814725120C012B8005743BC /* FSHearNowDTO.m */; };
+		181472BC20C012B8005743BC /* FSIconDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814725320C012B8005743BC /* FSIconDTO.m */; };
+		181472BD20C012B8005743BC /* FSItemDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814725520C012B8005743BC /* FSItemDTO.m */; };
+		181472BE20C012B8005743BC /* FSLocationDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814725720C012B8005743BC /* FSLocationDTO.m */; };
+		181472BF20C012B8005743BC /* FSMetaDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814725920C012B8005743BC /* FSMetaDTO.m */; };
+		181472C020C012B8005743BC /* FSPriceDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814725B20C012B8005743BC /* FSPriceDTO.m */; };
+		181472C120C012B8005743BC /* FSRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814725D20C012B8005743BC /* FSRequestDTO.m */; };
+		181472C220C012B8005743BC /* FSResponseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814725F20C012B8005743BC /* FSResponseDTO.m */; };
+		181472C320C012B8005743BC /* FSResultDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814726120C012B8005743BC /* FSResultDTO.m */; };
+		181472C420C012B8005743BC /* FSStatsDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814726320C012B8005743BC /* FSStatsDTO.m */; };
+		181472C520C012B8005743BC /* FSTipDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814726520C012B8005743BC /* FSTipDTO.m */; };
+		181472C620C012B8005743BC /* FSVenueDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814726720C012B8005743BC /* FSVenueDTO.m */; };
+		181472C720C012B8005743BC /* FSVenueHoursDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814726920C012B8005743BC /* FSVenueHoursDTO.m */; };
+		181472C820C012B8005743BC /* FSVenueListDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814726B20C012B8005743BC /* FSVenueListDTO.m */; };
+		181472C920C012B8005743BC /* FSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814726D20C012B8005743BC /* FSContext.m */; };
+		181472CA20C012B8005743BC /* FSPlacesDAOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814726F20C012B8005743BC /* FSPlacesDAOFactory.m */; };
+		181472CB20C012B8005743BC /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814727220C012B8005743BC /* Colors.m */; };
+		181472CC20C012B8005743BC /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814727420C012B8005743BC /* Strings.m */; };
+		181472CD20C012B8005743BC /* MapPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814727720C012B8005743BC /* MapPresenter.m */; };
+		181472CE20C012B8005743BC /* PlaceDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814727920C012B8005743BC /* PlaceDetailPresenter.m */; };
+		181472CF20C012B8005743BC /* PlaceListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814727B20C012B8005743BC /* PlaceListPresenter.m */; };
+		181472D020C012B8005743BC /* StaticMapDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814727F20C012B8005743BC /* StaticMapDTO.m */; };
+		181472D120C012B8005743BC /* StaticMapMarkerDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814728120C012B8005743BC /* StaticMapMarkerDTO.m */; };
+		181472D220C012B8005743BC /* StaticMapRequestDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814728320C012B8005743BC /* StaticMapRequestDTO.m */; };
+		181472D320C012B8005743BC /* IMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814728620C012B8005743BC /* IMapView.m */; };
+		181472D420C012B8005743BC /* IPlaceDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814728820C012B8005743BC /* IPlaceDetailView.m */; };
+		181472D520C012B8005743BC /* IPlaceListItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814728A20C012B8005743BC /* IPlaceListItemView.m */; };
+		181472D620C012B8005743BC /* IPlaceListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814728C20C012B8005743BC /* IPlaceListView.m */; };
+		181472D720C012B8005743BC /* AssociationDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814729020C012B8005743BC /* AssociationDAO.m */; };
+		181472D820C012B8005743BC /* EntityJsonDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814729220C012B8005743BC /* EntityJsonDAO.m */; };
+		181472D920C012B8005743BC /* AsyncCUDJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814729520C012B8005743BC /* AsyncCUDJob.m */; };
+		181472DA20C012B8005743BC /* CreateAsyncJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814729720C012B8005743BC /* CreateAsyncJob.m */; };
+		181472DB20C012B8005743BC /* DeleteAsyncJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814729920C012B8005743BC /* DeleteAsyncJob.m */; };
+		181472DC20C012B8005743BC /* DeleteInAsyncJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814729B20C012B8005743BC /* DeleteInAsyncJob.m */; };
+		181472DD20C012B8005743BC /* SQLiteQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814729D20C012B8005743BC /* SQLiteQuery.m */; };
+		181472DE20C012B8005743BC /* SQLiteTableInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814729F20C012B8005743BC /* SQLiteTableInfo.m */; };
+		181472DF20C012B8005743BC /* ToDataObjectConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472A120C012B8005743BC /* ToDataObjectConverter.m */; };
+		181472E020C012B8005743BC /* TreeTypedDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472A320C012B8005743BC /* TreeTypedDAO.m */; };
+		181472E120C012B8005743BC /* TypedDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472A520C012B8005743BC /* TypedDAO.m */; };
+		181472E220C012B8005743BC /* UpdateAsyncJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472A720C012B8005743BC /* UpdateAsyncJob.m */; };
+		181472E820C012F5005743BC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 181472E620C012F5005743BC /* libsqlite3.tbd */; };
+		181472E920C012F5005743BC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 181472E720C012F5005743BC /* libsqlite3.0.tbd */; };
+		181472ED20C016D0005743BC /* StaticMapGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472EC20C016D0005743BC /* StaticMapGateway.m */; };
+		181472F620C017FD005743BC /* FSVenueDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472F520C017FD005743BC /* FSVenueDAO.m */; };
+		181472F920C0180F005743BC /* FSCategoryDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472F820C0180F005743BC /* FSCategoryDAO.m */; };
+		181472FC20C0181D005743BC /* FSLocationDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472FB20C0181D005743BC /* FSLocationDAO.m */; };
+		181472FF20C0196D005743BC /* FSVenueSearchGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 181472FE20C0196D005743BC /* FSVenueSearchGateway.m */; };
+		1814730D20C01DE9005743BC /* jVanila.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1814730C20C01DE9005743BC /* jVanila.framework */; };
+		1814731420C025AA005743BC /* PlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814731320C025AA005743BC /* PlaceListViewController.swift */; };
+		1814731B20C026C5005743BC /* JobHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814731620C026C5005743BC /* JobHandler.swift */; };
+		1814731C20C026C5005743BC /* SwiftVanilaUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814731720C026C5005743BC /* SwiftVanilaUIView.swift */; };
+		1814731D20C026C5005743BC /* VanilaBindableUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814731820C026C5005743BC /* VanilaBindableUITableViewCell.swift */; };
+		1814731E20C026C5005743BC /* VanilaBindableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814731920C026C5005743BC /* VanilaBindableUIView.swift */; };
+		1814731F20C026C5005743BC /* SwiftVanilaUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814731A20C026C5005743BC /* SwiftVanilaUIViewController.swift */; };
+		1814732120C027F1005743BC /* PlaceListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814732020C027F1005743BC /* PlaceListItemCell.swift */; };
+		1814732320C0283E005743BC /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814732220C0283E005743BC /* PlaceDetailViewController.swift */; };
+		1814732520C02891005743BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814732420C02891005743BC /* MapViewController.swift */; };
+		1814732720C029C3005743BC /* SetupApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814732620C029C3005743BC /* SetupApis.swift */; };
+		1814732920C02B56005743BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814732820C02B56005743BC /* Constants.swift */; };
+		1814732F20C02C4E005743BC /* create_jv_schema.sql in Resources */ = {isa = PBXBuildFile; fileRef = 1814732B20C02C4E005743BC /* create_jv_schema.sql */; };
+		1814733020C02C4E005743BC /* create_schema.sql in Resources */ = {isa = PBXBuildFile; fileRef = 1814732C20C02C4E005743BC /* create_schema.sql */; };
+		1814733120C02C4E005743BC /* delete_jv_schema.sql in Resources */ = {isa = PBXBuildFile; fileRef = 1814732D20C02C4E005743BC /* delete_jv_schema.sql */; };
+		1814733220C02C4E005743BC /* delete_schema.sql in Resources */ = {isa = PBXBuildFile; fileRef = 1814732E20C02C4E005743BC /* delete_schema.sql */; };
+		F9BE965AFF9DC3F7D6F97D12 /* Pods_HomeAwayPlacesIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2085531B4CDBB75C581B04EB /* Pods_HomeAwayPlacesIOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D30DA35C3A49FBA75179DB2 /* Pods-HomeAwayPlacesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayPlacesIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayPlacesIOS/Pods-HomeAwayPlacesIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1814721120C01274005743BC /* HomeAwayPlacesIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAwayPlacesIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1814721420C01274005743BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1814721620C01274005743BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1814721920C01274005743BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1814721B20C01275005743BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1814721E20C01276005743BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1814722020C01276005743BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1814722C20C012B8005743BC /* PlaceListItemDataBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceListItemDataBinder.h; sourceTree = "<group>"; };
+		1814722D20C012B8005743BC /* PlaceListItemDataBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceListItemDataBinder.m; sourceTree = "<group>"; };
+		1814722F20C012B8005743BC /* MarkerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerModel.h; sourceTree = "<group>"; };
+		1814723020C012B8005743BC /* MarkerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerModel.m; sourceTree = "<group>"; };
+		1814723120C012B8005743BC /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		1814723220C012B8005743BC /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		1814723320C012B8005743BC /* PlaceModifiedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceModifiedEvent.h; sourceTree = "<group>"; };
+		1814723420C012B8005743BC /* PlaceModifiedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceModifiedEvent.m; sourceTree = "<group>"; };
+		1814723520C012B8005743BC /* PlacesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesApi.h; sourceTree = "<group>"; };
+		1814723620C012B8005743BC /* PlacesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesApi.m; sourceTree = "<group>"; };
+		1814723720C012B8005743BC /* PlacesContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesContext.h; sourceTree = "<group>"; };
+		1814723820C012B8005743BC /* PlacesContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesContext.m; sourceTree = "<group>"; };
+		1814723920C012B8005743BC /* PlaceSearchResultEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceSearchResultEvent.h; sourceTree = "<group>"; };
+		1814723A20C012B8005743BC /* PlaceSearchResultEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceSearchResultEvent.m; sourceTree = "<group>"; };
+		1814723B20C012B8005743BC /* PlacesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesProvider.h; sourceTree = "<group>"; };
+		1814723C20C012B8005743BC /* PlacesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesProvider.m; sourceTree = "<group>"; };
+		1814723F20C012B8005743BC /* AssociationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociationDTO.h; sourceTree = "<group>"; };
+		1814724020C012B8005743BC /* AssociationDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociationDTO.m; sourceTree = "<group>"; };
+		1814724120C012B8005743BC /* EntityJsonDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityJsonDTO.h; sourceTree = "<group>"; };
+		1814724220C012B8005743BC /* EntityJsonDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityJsonDTO.m; sourceTree = "<group>"; };
+		1814724320C012B8005743BC /* PlacesDAOFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesDAOFactory.h; sourceTree = "<group>"; };
+		1814724420C012B8005743BC /* PlacesDAOFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesDAOFactory.m; sourceTree = "<group>"; };
+		1814724620C012B8005743BC /* R.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = R.h; sourceTree = "<group>"; };
+		1814724820C012B8005743BC /* FSPlaceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPlaceProvider.h; sourceTree = "<group>"; };
+		1814724920C012B8005743BC /* FSPlaceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPlaceProvider.m; sourceTree = "<group>"; };
+		1814724C20C012B8005743BC /* FSCategoryDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCategoryDTO.h; sourceTree = "<group>"; };
+		1814724D20C012B8005743BC /* FSCategoryDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCategoryDTO.m; sourceTree = "<group>"; };
+		1814724E20C012B8005743BC /* FSGroupDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGroupDTO.h; sourceTree = "<group>"; };
+		1814724F20C012B8005743BC /* FSGroupDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSGroupDTO.m; sourceTree = "<group>"; };
+		1814725020C012B8005743BC /* FSHearNowDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSHearNowDTO.h; sourceTree = "<group>"; };
+		1814725120C012B8005743BC /* FSHearNowDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSHearNowDTO.m; sourceTree = "<group>"; };
+		1814725220C012B8005743BC /* FSIconDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSIconDTO.h; sourceTree = "<group>"; };
+		1814725320C012B8005743BC /* FSIconDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSIconDTO.m; sourceTree = "<group>"; };
+		1814725420C012B8005743BC /* FSItemDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSItemDTO.h; sourceTree = "<group>"; };
+		1814725520C012B8005743BC /* FSItemDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSItemDTO.m; sourceTree = "<group>"; };
+		1814725620C012B8005743BC /* FSLocationDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLocationDTO.h; sourceTree = "<group>"; };
+		1814725720C012B8005743BC /* FSLocationDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLocationDTO.m; sourceTree = "<group>"; };
+		1814725820C012B8005743BC /* FSMetaDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMetaDTO.h; sourceTree = "<group>"; };
+		1814725920C012B8005743BC /* FSMetaDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMetaDTO.m; sourceTree = "<group>"; };
+		1814725A20C012B8005743BC /* FSPriceDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPriceDTO.h; sourceTree = "<group>"; };
+		1814725B20C012B8005743BC /* FSPriceDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPriceDTO.m; sourceTree = "<group>"; };
+		1814725C20C012B8005743BC /* FSRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRequestDTO.h; sourceTree = "<group>"; };
+		1814725D20C012B8005743BC /* FSRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRequestDTO.m; sourceTree = "<group>"; };
+		1814725E20C012B8005743BC /* FSResponseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSResponseDTO.h; sourceTree = "<group>"; };
+		1814725F20C012B8005743BC /* FSResponseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSResponseDTO.m; sourceTree = "<group>"; };
+		1814726020C012B8005743BC /* FSResultDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSResultDTO.h; sourceTree = "<group>"; };
+		1814726120C012B8005743BC /* FSResultDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSResultDTO.m; sourceTree = "<group>"; };
+		1814726220C012B8005743BC /* FSStatsDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSStatsDTO.h; sourceTree = "<group>"; };
+		1814726320C012B8005743BC /* FSStatsDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSStatsDTO.m; sourceTree = "<group>"; };
+		1814726420C012B8005743BC /* FSTipDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTipDTO.h; sourceTree = "<group>"; };
+		1814726520C012B8005743BC /* FSTipDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTipDTO.m; sourceTree = "<group>"; };
+		1814726620C012B8005743BC /* FSVenueDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSVenueDTO.h; sourceTree = "<group>"; };
+		1814726720C012B8005743BC /* FSVenueDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSVenueDTO.m; sourceTree = "<group>"; };
+		1814726820C012B8005743BC /* FSVenueHoursDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSVenueHoursDTO.h; sourceTree = "<group>"; };
+		1814726920C012B8005743BC /* FSVenueHoursDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSVenueHoursDTO.m; sourceTree = "<group>"; };
+		1814726A20C012B8005743BC /* FSVenueListDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSVenueListDTO.h; sourceTree = "<group>"; };
+		1814726B20C012B8005743BC /* FSVenueListDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSVenueListDTO.m; sourceTree = "<group>"; };
+		1814726C20C012B8005743BC /* FSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSContext.h; sourceTree = "<group>"; };
+		1814726D20C012B8005743BC /* FSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSContext.m; sourceTree = "<group>"; };
+		1814726E20C012B8005743BC /* FSPlacesDAOFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPlacesDAOFactory.h; sourceTree = "<group>"; };
+		1814726F20C012B8005743BC /* FSPlacesDAOFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPlacesDAOFactory.m; sourceTree = "<group>"; };
+		1814727120C012B8005743BC /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		1814727220C012B8005743BC /* Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colors.m; sourceTree = "<group>"; };
+		1814727320C012B8005743BC /* Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
+		1814727420C012B8005743BC /* Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
+		1814727620C012B8005743BC /* MapPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPresenter.h; sourceTree = "<group>"; };
+		1814727720C012B8005743BC /* MapPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPresenter.m; sourceTree = "<group>"; };
+		1814727820C012B8005743BC /* PlaceDetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetailPresenter.h; sourceTree = "<group>"; };
+		1814727920C012B8005743BC /* PlaceDetailPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetailPresenter.m; sourceTree = "<group>"; };
+		1814727A20C012B8005743BC /* PlaceListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceListPresenter.h; sourceTree = "<group>"; };
+		1814727B20C012B8005743BC /* PlaceListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceListPresenter.m; sourceTree = "<group>"; };
+		1814727E20C012B8005743BC /* StaticMapDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticMapDTO.h; sourceTree = "<group>"; };
+		1814727F20C012B8005743BC /* StaticMapDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticMapDTO.m; sourceTree = "<group>"; };
+		1814728020C012B8005743BC /* StaticMapMarkerDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticMapMarkerDTO.h; sourceTree = "<group>"; };
+		1814728120C012B8005743BC /* StaticMapMarkerDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticMapMarkerDTO.m; sourceTree = "<group>"; };
+		1814728220C012B8005743BC /* StaticMapRequestDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticMapRequestDTO.h; sourceTree = "<group>"; };
+		1814728320C012B8005743BC /* StaticMapRequestDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticMapRequestDTO.m; sourceTree = "<group>"; };
+		1814728520C012B8005743BC /* IMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMapView.h; sourceTree = "<group>"; };
+		1814728620C012B8005743BC /* IMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMapView.m; sourceTree = "<group>"; };
+		1814728720C012B8005743BC /* IPlaceDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPlaceDetailView.h; sourceTree = "<group>"; };
+		1814728820C012B8005743BC /* IPlaceDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPlaceDetailView.m; sourceTree = "<group>"; };
+		1814728920C012B8005743BC /* IPlaceListItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPlaceListItemView.h; sourceTree = "<group>"; };
+		1814728A20C012B8005743BC /* IPlaceListItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPlaceListItemView.m; sourceTree = "<group>"; };
+		1814728B20C012B8005743BC /* IPlaceListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPlaceListView.h; sourceTree = "<group>"; };
+		1814728C20C012B8005743BC /* IPlaceListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPlaceListView.m; sourceTree = "<group>"; };
+		1814728F20C012B8005743BC /* AssociationDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociationDAO.h; sourceTree = "<group>"; };
+		1814729020C012B8005743BC /* AssociationDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociationDAO.m; sourceTree = "<group>"; };
+		1814729120C012B8005743BC /* EntityJsonDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityJsonDAO.h; sourceTree = "<group>"; };
+		1814729220C012B8005743BC /* EntityJsonDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityJsonDAO.m; sourceTree = "<group>"; };
+		1814729420C012B8005743BC /* AsyncCUDJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncCUDJob.h; sourceTree = "<group>"; };
+		1814729520C012B8005743BC /* AsyncCUDJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncCUDJob.m; sourceTree = "<group>"; };
+		1814729620C012B8005743BC /* CreateAsyncJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAsyncJob.h; sourceTree = "<group>"; };
+		1814729720C012B8005743BC /* CreateAsyncJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAsyncJob.m; sourceTree = "<group>"; };
+		1814729820C012B8005743BC /* DeleteAsyncJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteAsyncJob.h; sourceTree = "<group>"; };
+		1814729920C012B8005743BC /* DeleteAsyncJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteAsyncJob.m; sourceTree = "<group>"; };
+		1814729A20C012B8005743BC /* DeleteInAsyncJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteInAsyncJob.h; sourceTree = "<group>"; };
+		1814729B20C012B8005743BC /* DeleteInAsyncJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteInAsyncJob.m; sourceTree = "<group>"; };
+		1814729C20C012B8005743BC /* SQLiteQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteQuery.h; sourceTree = "<group>"; };
+		1814729D20C012B8005743BC /* SQLiteQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteQuery.m; sourceTree = "<group>"; };
+		1814729E20C012B8005743BC /* SQLiteTableInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteTableInfo.h; sourceTree = "<group>"; };
+		1814729F20C012B8005743BC /* SQLiteTableInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteTableInfo.m; sourceTree = "<group>"; };
+		181472A020C012B8005743BC /* ToDataObjectConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDataObjectConverter.h; sourceTree = "<group>"; };
+		181472A120C012B8005743BC /* ToDataObjectConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDataObjectConverter.m; sourceTree = "<group>"; };
+		181472A220C012B8005743BC /* TreeTypedDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTypedDAO.h; sourceTree = "<group>"; };
+		181472A320C012B8005743BC /* TreeTypedDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTypedDAO.m; sourceTree = "<group>"; };
+		181472A420C012B8005743BC /* TypedDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypedDAO.h; sourceTree = "<group>"; };
+		181472A520C012B8005743BC /* TypedDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypedDAO.m; sourceTree = "<group>"; };
+		181472A620C012B8005743BC /* UpdateAsyncJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateAsyncJob.h; sourceTree = "<group>"; };
+		181472A720C012B8005743BC /* UpdateAsyncJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateAsyncJob.m; sourceTree = "<group>"; };
+		181472E620C012F5005743BC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		181472E720C012F5005743BC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		181472EB20C016D0005743BC /* StaticMapGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticMapGateway.h; sourceTree = "<group>"; };
+		181472EC20C016D0005743BC /* StaticMapGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticMapGateway.m; sourceTree = "<group>"; };
+		181472F420C017FD005743BC /* FSVenueDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSVenueDAO.h; sourceTree = "<group>"; };
+		181472F520C017FD005743BC /* FSVenueDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSVenueDAO.m; sourceTree = "<group>"; };
+		181472F720C0180F005743BC /* FSCategoryDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCategoryDAO.h; sourceTree = "<group>"; };
+		181472F820C0180F005743BC /* FSCategoryDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCategoryDAO.m; sourceTree = "<group>"; };
+		181472FA20C0181D005743BC /* FSLocationDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSLocationDAO.h; sourceTree = "<group>"; };
+		181472FB20C0181D005743BC /* FSLocationDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSLocationDAO.m; sourceTree = "<group>"; };
+		181472FD20C0196D005743BC /* FSVenueSearchGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSVenueSearchGateway.h; sourceTree = "<group>"; };
+		181472FE20C0196D005743BC /* FSVenueSearchGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSVenueSearchGateway.m; sourceTree = "<group>"; };
+		1814730C20C01DE9005743BC /* jVanila.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = jVanila.framework; path = Frameworks/jVanila.framework; sourceTree = "<group>"; };
+		1814731220C024DA005743BC /* HomeAwayPlacesIOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeAwayPlacesIOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		1814731320C025AA005743BC /* PlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewController.swift; sourceTree = "<group>"; };
+		1814731620C026C5005743BC /* JobHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobHandler.swift; sourceTree = "<group>"; };
+		1814731720C026C5005743BC /* SwiftVanilaUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftVanilaUIView.swift; sourceTree = "<group>"; };
+		1814731820C026C5005743BC /* VanilaBindableUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VanilaBindableUITableViewCell.swift; sourceTree = "<group>"; };
+		1814731920C026C5005743BC /* VanilaBindableUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VanilaBindableUIView.swift; sourceTree = "<group>"; };
+		1814731A20C026C5005743BC /* SwiftVanilaUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftVanilaUIViewController.swift; sourceTree = "<group>"; };
+		1814732020C027F1005743BC /* PlaceListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListItemCell.swift; sourceTree = "<group>"; };
+		1814732220C0283E005743BC /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		1814732420C02891005743BC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1814732620C029C3005743BC /* SetupApis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupApis.swift; sourceTree = "<group>"; };
+		1814732820C02B56005743BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1814732B20C02C4E005743BC /* create_jv_schema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_jv_schema.sql; sourceTree = "<group>"; };
+		1814732C20C02C4E005743BC /* create_schema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_schema.sql; sourceTree = "<group>"; };
+		1814732D20C02C4E005743BC /* delete_jv_schema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = delete_jv_schema.sql; sourceTree = "<group>"; };
+		1814732E20C02C4E005743BC /* delete_schema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = delete_schema.sql; sourceTree = "<group>"; };
+		2085531B4CDBB75C581B04EB /* Pods_HomeAwayPlacesIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayPlacesIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE189C3965BA6F6EB12E68 /* Pods-HomeAwayPlacesIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayPlacesIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeAwayPlacesIOS/Pods-HomeAwayPlacesIOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1814720E20C01274005743BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181472E820C012F5005743BC /* libsqlite3.tbd in Frameworks */,
+				181472E920C012F5005743BC /* libsqlite3.0.tbd in Frameworks */,
+				1814730D20C01DE9005743BC /* jVanila.framework in Frameworks */,
+				F9BE965AFF9DC3F7D6F97D12 /* Pods_HomeAwayPlacesIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1814720820C01274005743BC = {
+			isa = PBXGroup;
+			children = (
+				1814721320C01274005743BC /* HomeAwayPlacesIOS */,
+				1814721220C01274005743BC /* Products */,
+				181472E320C012EC005743BC /* Frameworks */,
+				368B1315DD54552467331BF1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		1814721220C01274005743BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1814721120C01274005743BC /* HomeAwayPlacesIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1814721320C01274005743BC /* HomeAwayPlacesIOS */ = {
+			isa = PBXGroup;
+			children = (
+				181472AC20C012B8005743BC /* Resoruces */,
+				1814722620C012B7005743BC /* Source */,
+				1814721420C01274005743BC /* AppDelegate.swift */,
+				1814721620C01274005743BC /* ViewController.swift */,
+				1814721820C01274005743BC /* Main.storyboard */,
+				1814721B20C01275005743BC /* Assets.xcassets */,
+				1814721D20C01276005743BC /* LaunchScreen.storyboard */,
+				1814722020C01276005743BC /* Info.plist */,
+			);
+			path = HomeAwayPlacesIOS;
+			sourceTree = "<group>";
+		};
+		1814722620C012B7005743BC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1814731220C024DA005743BC /* HomeAwayPlacesIOS-Bridging-Header.h */,
+				1814722720C012B7005743BC /* CodeConversion */,
+				1814728D20C012B8005743BC /* CodeGeneration */,
+				181472A820C012B8005743BC /* iOS */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1814722720C012B7005743BC /* CodeConversion */ = {
+			isa = PBXGroup;
+			children = (
+				1814722820C012B7005743BC /* com */,
+			);
+			path = CodeConversion;
+			sourceTree = "<group>";
+		};
+		1814722820C012B7005743BC /* com */ = {
+			isa = PBXGroup;
+			children = (
+				1814722920C012B7005743BC /* homeaway */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		1814722920C012B7005743BC /* homeaway */ = {
+			isa = PBXGroup;
+			children = (
+				1814722A20C012B7005743BC /* homeawayplaces */,
+			);
+			path = homeaway;
+			sourceTree = "<group>";
+		};
+		1814722A20C012B7005743BC /* homeawayplaces */ = {
+			isa = PBXGroup;
+			children = (
+				1814722B20C012B7005743BC /* binders */,
+				1814722E20C012B8005743BC /* domain */,
+				1814724520C012B8005743BC /* droid */,
+				1814724720C012B8005743BC /* foursquare */,
+				1814727020C012B8005743BC /* locale */,
+				1814727520C012B8005743BC /* presenters */,
+				1814727C20C012B8005743BC /* sync */,
+				1814728420C012B8005743BC /* views */,
+			);
+			path = homeawayplaces;
+			sourceTree = "<group>";
+		};
+		1814722B20C012B7005743BC /* binders */ = {
+			isa = PBXGroup;
+			children = (
+				1814722C20C012B8005743BC /* PlaceListItemDataBinder.h */,
+				1814722D20C012B8005743BC /* PlaceListItemDataBinder.m */,
+			);
+			path = binders;
+			sourceTree = "<group>";
+		};
+		1814722E20C012B8005743BC /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				1814722F20C012B8005743BC /* MarkerModel.h */,
+				1814723020C012B8005743BC /* MarkerModel.m */,
+				1814723120C012B8005743BC /* Place.h */,
+				1814723220C012B8005743BC /* Place.m */,
+				1814723320C012B8005743BC /* PlaceModifiedEvent.h */,
+				1814723420C012B8005743BC /* PlaceModifiedEvent.m */,
+				1814723520C012B8005743BC /* PlacesApi.h */,
+				1814723620C012B8005743BC /* PlacesApi.m */,
+				1814723720C012B8005743BC /* PlacesContext.h */,
+				1814723820C012B8005743BC /* PlacesContext.m */,
+				1814723920C012B8005743BC /* PlaceSearchResultEvent.h */,
+				1814723A20C012B8005743BC /* PlaceSearchResultEvent.m */,
+				1814723B20C012B8005743BC /* PlacesProvider.h */,
+				1814723C20C012B8005743BC /* PlacesProvider.m */,
+				1814723D20C012B8005743BC /* sync */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		1814723D20C012B8005743BC /* sync */ = {
+			isa = PBXGroup;
+			children = (
+				1814723E20C012B8005743BC /* dtos */,
+				1814724320C012B8005743BC /* PlacesDAOFactory.h */,
+				1814724420C012B8005743BC /* PlacesDAOFactory.m */,
+			);
+			path = sync;
+			sourceTree = "<group>";
+		};
+		1814723E20C012B8005743BC /* dtos */ = {
+			isa = PBXGroup;
+			children = (
+				1814723F20C012B8005743BC /* AssociationDTO.h */,
+				1814724020C012B8005743BC /* AssociationDTO.m */,
+				1814724120C012B8005743BC /* EntityJsonDTO.h */,
+				1814724220C012B8005743BC /* EntityJsonDTO.m */,
+			);
+			path = dtos;
+			sourceTree = "<group>";
+		};
+		1814724520C012B8005743BC /* droid */ = {
+			isa = PBXGroup;
+			children = (
+				1814724620C012B8005743BC /* R.h */,
+			);
+			path = droid;
+			sourceTree = "<group>";
+		};
+		1814724720C012B8005743BC /* foursquare */ = {
+			isa = PBXGroup;
+			children = (
+				1814724820C012B8005743BC /* FSPlaceProvider.h */,
+				1814724920C012B8005743BC /* FSPlaceProvider.m */,
+				1814724A20C012B8005743BC /* sync */,
+			);
+			path = foursquare;
+			sourceTree = "<group>";
+		};
+		1814724A20C012B8005743BC /* sync */ = {
+			isa = PBXGroup;
+			children = (
+				1814724B20C012B8005743BC /* dtos */,
+				1814726C20C012B8005743BC /* FSContext.h */,
+				1814726D20C012B8005743BC /* FSContext.m */,
+				1814726E20C012B8005743BC /* FSPlacesDAOFactory.h */,
+				1814726F20C012B8005743BC /* FSPlacesDAOFactory.m */,
+			);
+			path = sync;
+			sourceTree = "<group>";
+		};
+		1814724B20C012B8005743BC /* dtos */ = {
+			isa = PBXGroup;
+			children = (
+				1814724C20C012B8005743BC /* FSCategoryDTO.h */,
+				1814724D20C012B8005743BC /* FSCategoryDTO.m */,
+				1814724E20C012B8005743BC /* FSGroupDTO.h */,
+				1814724F20C012B8005743BC /* FSGroupDTO.m */,
+				1814725020C012B8005743BC /* FSHearNowDTO.h */,
+				1814725120C012B8005743BC /* FSHearNowDTO.m */,
+				1814725220C012B8005743BC /* FSIconDTO.h */,
+				1814725320C012B8005743BC /* FSIconDTO.m */,
+				1814725420C012B8005743BC /* FSItemDTO.h */,
+				1814725520C012B8005743BC /* FSItemDTO.m */,
+				1814725620C012B8005743BC /* FSLocationDTO.h */,
+				1814725720C012B8005743BC /* FSLocationDTO.m */,
+				1814725820C012B8005743BC /* FSMetaDTO.h */,
+				1814725920C012B8005743BC /* FSMetaDTO.m */,
+				1814725A20C012B8005743BC /* FSPriceDTO.h */,
+				1814725B20C012B8005743BC /* FSPriceDTO.m */,
+				1814725C20C012B8005743BC /* FSRequestDTO.h */,
+				1814725D20C012B8005743BC /* FSRequestDTO.m */,
+				1814725E20C012B8005743BC /* FSResponseDTO.h */,
+				1814725F20C012B8005743BC /* FSResponseDTO.m */,
+				1814726020C012B8005743BC /* FSResultDTO.h */,
+				1814726120C012B8005743BC /* FSResultDTO.m */,
+				1814726220C012B8005743BC /* FSStatsDTO.h */,
+				1814726320C012B8005743BC /* FSStatsDTO.m */,
+				1814726420C012B8005743BC /* FSTipDTO.h */,
+				1814726520C012B8005743BC /* FSTipDTO.m */,
+				1814726620C012B8005743BC /* FSVenueDTO.h */,
+				1814726720C012B8005743BC /* FSVenueDTO.m */,
+				1814726820C012B8005743BC /* FSVenueHoursDTO.h */,
+				1814726920C012B8005743BC /* FSVenueHoursDTO.m */,
+				1814726A20C012B8005743BC /* FSVenueListDTO.h */,
+				1814726B20C012B8005743BC /* FSVenueListDTO.m */,
+			);
+			path = dtos;
+			sourceTree = "<group>";
+		};
+		1814727020C012B8005743BC /* locale */ = {
+			isa = PBXGroup;
+			children = (
+				1814727120C012B8005743BC /* Colors.h */,
+				1814727220C012B8005743BC /* Colors.m */,
+				1814727320C012B8005743BC /* Strings.h */,
+				1814727420C012B8005743BC /* Strings.m */,
+			);
+			path = locale;
+			sourceTree = "<group>";
+		};
+		1814727520C012B8005743BC /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+				1814727620C012B8005743BC /* MapPresenter.h */,
+				1814727720C012B8005743BC /* MapPresenter.m */,
+				1814727820C012B8005743BC /* PlaceDetailPresenter.h */,
+				1814727920C012B8005743BC /* PlaceDetailPresenter.m */,
+				1814727A20C012B8005743BC /* PlaceListPresenter.h */,
+				1814727B20C012B8005743BC /* PlaceListPresenter.m */,
+			);
+			path = presenters;
+			sourceTree = "<group>";
+		};
+		1814727C20C012B8005743BC /* sync */ = {
+			isa = PBXGroup;
+			children = (
+				1814727D20C012B8005743BC /* dtos */,
+			);
+			path = sync;
+			sourceTree = "<group>";
+		};
+		1814727D20C012B8005743BC /* dtos */ = {
+			isa = PBXGroup;
+			children = (
+				1814727E20C012B8005743BC /* StaticMapDTO.h */,
+				1814727F20C012B8005743BC /* StaticMapDTO.m */,
+				1814728020C012B8005743BC /* StaticMapMarkerDTO.h */,
+				1814728120C012B8005743BC /* StaticMapMarkerDTO.m */,
+				1814728220C012B8005743BC /* StaticMapRequestDTO.h */,
+				1814728320C012B8005743BC /* StaticMapRequestDTO.m */,
+			);
+			path = dtos;
+			sourceTree = "<group>";
+		};
+		1814728420C012B8005743BC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1814728520C012B8005743BC /* IMapView.h */,
+				1814728620C012B8005743BC /* IMapView.m */,
+				1814728720C012B8005743BC /* IPlaceDetailView.h */,
+				1814728820C012B8005743BC /* IPlaceDetailView.m */,
+				1814728920C012B8005743BC /* IPlaceListItemView.h */,
+				1814728A20C012B8005743BC /* IPlaceListItemView.m */,
+				1814728B20C012B8005743BC /* IPlaceListView.h */,
+				1814728C20C012B8005743BC /* IPlaceListView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1814728D20C012B8005743BC /* CodeGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				1814732A20C02C4E005743BC /* sql */,
+				181472EE20C0179E005743BC /* foursquare */,
+				181472EA20C016A4005743BC /* gateways */,
+				1814728E20C012B8005743BC /* daos */,
+				1814729320C012B8005743BC /* sqllibrary */,
+			);
+			path = CodeGeneration;
+			sourceTree = "<group>";
+		};
+		1814728E20C012B8005743BC /* daos */ = {
+			isa = PBXGroup;
+			children = (
+				1814728F20C012B8005743BC /* AssociationDAO.h */,
+				1814729020C012B8005743BC /* AssociationDAO.m */,
+				1814729120C012B8005743BC /* EntityJsonDAO.h */,
+				1814729220C012B8005743BC /* EntityJsonDAO.m */,
+			);
+			path = daos;
+			sourceTree = "<group>";
+		};
+		1814729320C012B8005743BC /* sqllibrary */ = {
+			isa = PBXGroup;
+			children = (
+				1814729420C012B8005743BC /* AsyncCUDJob.h */,
+				1814729520C012B8005743BC /* AsyncCUDJob.m */,
+				1814729620C012B8005743BC /* CreateAsyncJob.h */,
+				1814729720C012B8005743BC /* CreateAsyncJob.m */,
+				1814729820C012B8005743BC /* DeleteAsyncJob.h */,
+				1814729920C012B8005743BC /* DeleteAsyncJob.m */,
+				1814729A20C012B8005743BC /* DeleteInAsyncJob.h */,
+				1814729B20C012B8005743BC /* DeleteInAsyncJob.m */,
+				1814729C20C012B8005743BC /* SQLiteQuery.h */,
+				1814729D20C012B8005743BC /* SQLiteQuery.m */,
+				1814729E20C012B8005743BC /* SQLiteTableInfo.h */,
+				1814729F20C012B8005743BC /* SQLiteTableInfo.m */,
+				181472A020C012B8005743BC /* ToDataObjectConverter.h */,
+				181472A120C012B8005743BC /* ToDataObjectConverter.m */,
+				181472A220C012B8005743BC /* TreeTypedDAO.h */,
+				181472A320C012B8005743BC /* TreeTypedDAO.m */,
+				181472A420C012B8005743BC /* TypedDAO.h */,
+				181472A520C012B8005743BC /* TypedDAO.m */,
+				181472A620C012B8005743BC /* UpdateAsyncJob.h */,
+				181472A720C012B8005743BC /* UpdateAsyncJob.m */,
+			);
+			path = sqllibrary;
+			sourceTree = "<group>";
+		};
+		181472A820C012B8005743BC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1814731520C026B5005743BC /* Others */,
+				181472A920C012B8005743BC /* Map */,
+				181472AA20C012B8005743BC /* PlaceDetail */,
+				181472AB20C012B8005743BC /* PlaceList */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		181472A920C012B8005743BC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1814732420C02891005743BC /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		181472AA20C012B8005743BC /* PlaceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1814732220C0283E005743BC /* PlaceDetailViewController.swift */,
+			);
+			path = PlaceDetail;
+			sourceTree = "<group>";
+		};
+		181472AB20C012B8005743BC /* PlaceList */ = {
+			isa = PBXGroup;
+			children = (
+				1814731320C025AA005743BC /* PlaceListViewController.swift */,
+				1814732020C027F1005743BC /* PlaceListItemCell.swift */,
+			);
+			path = PlaceList;
+			sourceTree = "<group>";
+		};
+		181472AC20C012B8005743BC /* Resoruces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resoruces;
+			sourceTree = "<group>";
+		};
+		181472E320C012EC005743BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1814730C20C01DE9005743BC /* jVanila.framework */,
+				181472E720C012F5005743BC /* libsqlite3.0.tbd */,
+				181472E620C012F5005743BC /* libsqlite3.tbd */,
+				2085531B4CDBB75C581B04EB /* Pods_HomeAwayPlacesIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		181472EA20C016A4005743BC /* gateways */ = {
+			isa = PBXGroup;
+			children = (
+				181472EB20C016D0005743BC /* StaticMapGateway.h */,
+				181472EC20C016D0005743BC /* StaticMapGateway.m */,
+			);
+			path = gateways;
+			sourceTree = "<group>";
+		};
+		181472EE20C0179E005743BC /* foursquare */ = {
+			isa = PBXGroup;
+			children = (
+				181472F020C017C1005743BC /* daos */,
+				181472EF20C017B9005743BC /* gateways */,
+			);
+			path = foursquare;
+			sourceTree = "<group>";
+		};
+		181472EF20C017B9005743BC /* gateways */ = {
+			isa = PBXGroup;
+			children = (
+				181472FD20C0196D005743BC /* FSVenueSearchGateway.h */,
+				181472FE20C0196D005743BC /* FSVenueSearchGateway.m */,
+			);
+			path = gateways;
+			sourceTree = "<group>";
+		};
+		181472F020C017C1005743BC /* daos */ = {
+			isa = PBXGroup;
+			children = (
+				181472F420C017FD005743BC /* FSVenueDAO.h */,
+				181472F520C017FD005743BC /* FSVenueDAO.m */,
+				181472F720C0180F005743BC /* FSCategoryDAO.h */,
+				181472F820C0180F005743BC /* FSCategoryDAO.m */,
+				181472FA20C0181D005743BC /* FSLocationDAO.h */,
+				181472FB20C0181D005743BC /* FSLocationDAO.m */,
+			);
+			path = daos;
+			sourceTree = "<group>";
+		};
+		1814731520C026B5005743BC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1814732620C029C3005743BC /* SetupApis.swift */,
+				1814731620C026C5005743BC /* JobHandler.swift */,
+				1814731720C026C5005743BC /* SwiftVanilaUIView.swift */,
+				1814731A20C026C5005743BC /* SwiftVanilaUIViewController.swift */,
+				1814731820C026C5005743BC /* VanilaBindableUITableViewCell.swift */,
+				1814731920C026C5005743BC /* VanilaBindableUIView.swift */,
+				1814732820C02B56005743BC /* Constants.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		1814732A20C02C4E005743BC /* sql */ = {
+			isa = PBXGroup;
+			children = (
+				1814732B20C02C4E005743BC /* create_jv_schema.sql */,
+				1814732C20C02C4E005743BC /* create_schema.sql */,
+				1814732D20C02C4E005743BC /* delete_jv_schema.sql */,
+				1814732E20C02C4E005743BC /* delete_schema.sql */,
+			);
+			path = sql;
+			sourceTree = "<group>";
+		};
+		368B1315DD54552467331BF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D30DA35C3A49FBA75179DB2 /* Pods-HomeAwayPlacesIOS.debug.xcconfig */,
+				22DE189C3965BA6F6EB12E68 /* Pods-HomeAwayPlacesIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1814721020C01274005743BC /* HomeAwayPlacesIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1814722320C01276005743BC /* Build configuration list for PBXNativeTarget "HomeAwayPlacesIOS" */;
+			buildPhases = (
+				9024F15DE4AF7B48A21DC456 /* [CP] Check Pods Manifest.lock */,
+				1814720D20C01274005743BC /* Sources */,
+				1814720E20C01274005743BC /* Frameworks */,
+				1814720F20C01274005743BC /* Resources */,
+				9EECFE0F52DEE199C7150215 /* [CP] Embed Pods Frameworks */,
+				C1F1BFCF89A8EC1B92CBFE19 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeAwayPlacesIOS;
+			productName = HomeAwayPlacesIOS;
+			productReference = 1814721120C01274005743BC /* HomeAwayPlacesIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1814720920C01274005743BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = pavan;
+				TargetAttributes = {
+					1814721020C01274005743BC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 1814720C20C01274005743BC /* Build configuration list for PBXProject "HomeAwayPlacesIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1814720820C01274005743BC;
+			productRefGroup = 1814721220C01274005743BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1814721020C01274005743BC /* HomeAwayPlacesIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1814720F20C01274005743BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1814733120C02C4E005743BC /* delete_jv_schema.sql in Resources */,
+				1814733220C02C4E005743BC /* delete_schema.sql in Resources */,
+				1814733020C02C4E005743BC /* create_schema.sql in Resources */,
+				1814721F20C01276005743BC /* LaunchScreen.storyboard in Resources */,
+				1814732F20C02C4E005743BC /* create_jv_schema.sql in Resources */,
+				1814721C20C01275005743BC /* Assets.xcassets in Resources */,
+				1814721A20C01274005743BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9024F15DE4AF7B48A21DC456 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeAwayPlacesIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EECFE0F52DEE199C7150215 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeAwayPlacesIOS/Pods-HomeAwayPlacesIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MQTTClient/MQTTClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MQTTClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeAwayPlacesIOS/Pods-HomeAwayPlacesIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F1BFCF89A8EC1B92CBFE19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeAwayPlacesIOS/Pods-HomeAwayPlacesIOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeAwayPlacesIOS/Pods-HomeAwayPlacesIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1814720D20C01274005743BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181472B620C012B8005743BC /* EntityJsonDTO.m in Sources */,
+				181472BB20C012B8005743BC /* FSHearNowDTO.m in Sources */,
+				181472D320C012B8005743BC /* IMapView.m in Sources */,
+				181472AF20C012B8005743BC /* Place.m in Sources */,
+				1814731E20C026C5005743BC /* VanilaBindableUIView.swift in Sources */,
+				181472B120C012B8005743BC /* PlacesApi.m in Sources */,
+				1814732120C027F1005743BC /* PlaceListItemCell.swift in Sources */,
+				181472F920C0180F005743BC /* FSCategoryDAO.m in Sources */,
+				181472C820C012B8005743BC /* FSVenueListDTO.m in Sources */,
+				1814732320C0283E005743BC /* PlaceDetailViewController.swift in Sources */,
+				181472CD20C012B8005743BC /* MapPresenter.m in Sources */,
+				181472E220C012B8005743BC /* UpdateAsyncJob.m in Sources */,
+				181472B920C012B8005743BC /* FSCategoryDTO.m in Sources */,
+				1814732520C02891005743BC /* MapViewController.swift in Sources */,
+				1814732720C029C3005743BC /* SetupApis.swift in Sources */,
+				181472BF20C012B8005743BC /* FSMetaDTO.m in Sources */,
+				181472DB20C012B8005743BC /* DeleteAsyncJob.m in Sources */,
+				181472CB20C012B8005743BC /* Colors.m in Sources */,
+				181472CE20C012B8005743BC /* PlaceDetailPresenter.m in Sources */,
+				181472CF20C012B8005743BC /* PlaceListPresenter.m in Sources */,
+				181472E020C012B8005743BC /* TreeTypedDAO.m in Sources */,
+				181472BA20C012B8005743BC /* FSGroupDTO.m in Sources */,
+				181472C520C012B8005743BC /* FSTipDTO.m in Sources */,
+				1814721720C01274005743BC /* ViewController.swift in Sources */,
+				1814731C20C026C5005743BC /* SwiftVanilaUIView.swift in Sources */,
+				181472D820C012B8005743BC /* EntityJsonDAO.m in Sources */,
+				181472F620C017FD005743BC /* FSVenueDAO.m in Sources */,
+				181472D220C012B8005743BC /* StaticMapRequestDTO.m in Sources */,
+				181472D020C012B8005743BC /* StaticMapDTO.m in Sources */,
+				181472D420C012B8005743BC /* IPlaceDetailView.m in Sources */,
+				181472FF20C0196D005743BC /* FSVenueSearchGateway.m in Sources */,
+				181472BC20C012B8005743BC /* FSIconDTO.m in Sources */,
+				181472C620C012B8005743BC /* FSVenueDTO.m in Sources */,
+				1814731F20C026C5005743BC /* SwiftVanilaUIViewController.swift in Sources */,
+				181472CA20C012B8005743BC /* FSPlacesDAOFactory.m in Sources */,
+				1814721520C01274005743BC /* AppDelegate.swift in Sources */,
+				181472AD20C012B8005743BC /* PlaceListItemDataBinder.m in Sources */,
+				181472AE20C012B8005743BC /* MarkerModel.m in Sources */,
+				181472D720C012B8005743BC /* AssociationDAO.m in Sources */,
+				1814731D20C026C5005743BC /* VanilaBindableUITableViewCell.swift in Sources */,
+				181472B820C012B8005743BC /* FSPlaceProvider.m in Sources */,
+				181472B020C012B8005743BC /* PlaceModifiedEvent.m in Sources */,
+				1814731420C025AA005743BC /* PlaceListViewController.swift in Sources */,
+				181472B220C012B8005743BC /* PlacesContext.m in Sources */,
+				181472B420C012B8005743BC /* PlacesProvider.m in Sources */,
+				181472C020C012B8005743BC /* FSPriceDTO.m in Sources */,
+				181472ED20C016D0005743BC /* StaticMapGateway.m in Sources */,
+				181472C220C012B8005743BC /* FSResponseDTO.m in Sources */,
+				181472D120C012B8005743BC /* StaticMapMarkerDTO.m in Sources */,
+				181472C320C012B8005743BC /* FSResultDTO.m in Sources */,
+				181472D920C012B8005743BC /* AsyncCUDJob.m in Sources */,
+				181472C120C012B8005743BC /* FSRequestDTO.m in Sources */,
+				181472C420C012B8005743BC /* FSStatsDTO.m in Sources */,
+				181472DE20C012B8005743BC /* SQLiteTableInfo.m in Sources */,
+				181472E120C012B8005743BC /* TypedDAO.m in Sources */,
+				181472C920C012B8005743BC /* FSContext.m in Sources */,
+				1814731B20C026C5005743BC /* JobHandler.swift in Sources */,
+				181472B520C012B8005743BC /* AssociationDTO.m in Sources */,
+				181472DC20C012B8005743BC /* DeleteInAsyncJob.m in Sources */,
+				181472DD20C012B8005743BC /* SQLiteQuery.m in Sources */,
+				181472D620C012B8005743BC /* IPlaceListView.m in Sources */,
+				181472DA20C012B8005743BC /* CreateAsyncJob.m in Sources */,
+				181472CC20C012B8005743BC /* Strings.m in Sources */,
+				181472B320C012B8005743BC /* PlaceSearchResultEvent.m in Sources */,
+				181472DF20C012B8005743BC /* ToDataObjectConverter.m in Sources */,
+				181472B720C012B8005743BC /* PlacesDAOFactory.m in Sources */,
+				181472C720C012B8005743BC /* FSVenueHoursDTO.m in Sources */,
+				181472FC20C0181D005743BC /* FSLocationDAO.m in Sources */,
+				181472D520C012B8005743BC /* IPlaceListItemView.m in Sources */,
+				181472BD20C012B8005743BC /* FSItemDTO.m in Sources */,
+				181472BE20C012B8005743BC /* FSLocationDTO.m in Sources */,
+				1814732920C02B56005743BC /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1814721820C01274005743BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1814721920C01274005743BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1814721D20C01276005743BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1814721E20C01276005743BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1814722120C01276005743BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1814722220C01276005743BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1814722420C01276005743BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D30DA35C3A49FBA75179DB2 /* Pods-HomeAwayPlacesIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SZAPEDF2Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = HomeAwayPlacesIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.homeaway.HomeAwayPlacesIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeAwayPlacesIOS/Source/HomeAwayPlacesIOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1814722520C01276005743BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DE189C3965BA6F6EB12E68 /* Pods-HomeAwayPlacesIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SZAPEDF2Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = HomeAwayPlacesIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.homeaway.HomeAwayPlacesIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeAwayPlacesIOS/Source/HomeAwayPlacesIOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1814720C20C01274005743BC /* Build configuration list for PBXProject "HomeAwayPlacesIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1814722120C01276005743BC /* Debug */,
+				1814722220C01276005743BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1814722320C01276005743BC /* Build configuration list for PBXNativeTarget "HomeAwayPlacesIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1814722420C01276005743BC /* Debug */,
+				1814722520C01276005743BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1814720920C01274005743BC /* Project object */;
+}

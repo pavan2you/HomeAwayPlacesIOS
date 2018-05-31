@@ -1,0 +1,30 @@
+#import "DataObject.h"
+#import "ICloneableObject.h"
+#import "IComparableObject.h"
+
+#define STANDARD_HEADER_CONTENT_LENGTH @"CONTENT-LENGTH"
+#define STANDARD_HEADER_CONTENT_TYPE @"CONTENT-TYPE"
+#define STANDARD_HEADER_ACCEPT @"ACCEPT"
+#define CUSTOM_HEADER_DEVICE_ID @"X-DEVICE-IDENTIFIER"
+#define CUSTOM_HEADER_CURRENT_BUILD_ID @"X-CURRENT-BUILD-ID"
+#define CUSTOM_HEADER_CURRENT_BUILD_NAME @"X-CURRENT-BUILD-NAME"
+#define CUSTOM_HEADER_MAKE_MODEL @"X-MAKE-MODEL"
+#define CUSTOM_HEADER_RESOLUTION @"X-RESOLUTION"
+#define CUSTOM_HEADER_OS_IDENTIFIER @"X-OS-IDENTIFIER"
+#define CUSTOM_HEADER_APPLICATION_ID @"X-APPLICATION-ID"
+#define CUSTOM_HEADER_SECUIRTY_TOKEN @"X-AUTH-TOKEN"
+#define CUSTOM_HEADER_STATUS @"X-STATUS"
+#define CUSTOM_HEADER_LATEST_BUILD_ID @"X-LATEST-BUILD-ID"
+#define String CUSTOM_HEADER_MIN_BUILD_ID "X-MIN-BUILD-ID"
+#define CUSTOM_HEADER_MAX_BUILD_ID "X-MAX-BUILD-ID"
+
+@interface HttpHeaderDTO : DataObject <NSCoding, NSCopying, ICloneableObject>
+
++(NSString *) CLASS_NAME;
+
+@property (nonatomic, retain) NSString *HeaderKey;
+@property (nonatomic, retain) NSString *HeaderValue;
+@property (nonatomic, retain) NSString *CRUDOperation;
+
+@end
+
